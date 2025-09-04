@@ -5,7 +5,7 @@ int queue[MAX];
 int front = -1;
 int rear = -1;
 bool isEmpty() {
-    return (front == -1);
+    return (front == -1 || front==rear);
 }
 bool isFull() {
     return ((rear + 1) % MAX == front);
@@ -106,3 +106,4 @@ int main() {
     }
     return 0;
 }
+
